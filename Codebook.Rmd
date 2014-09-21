@@ -1,0 +1,41 @@
+---
+title: "CodeBook for Course Project"
+author: "Peng Cheng Zhang"
+date: "September 21, 2014"
+output: pdf_document
+---
+
+CodeBook:
+The subject names are left as 1-30.
+
+The activity that used to be recorded as 1-5 are now in character form, and describes the activity.
+1-Walking_Flat
+2-Walking_Upstairs
+3-Walking_Downstairs
+4-Sitting
+5-Standing
+6-Laying
+
+The Rest of the variables are from the Xtest.txt or Xtrain.txt files.
+Any non alpha numerical characters are taken out, and spaces are taken out, where capital letters denote the start of a new word.
+Abbreviations are written out as full words in most cases. i.e.
+t: Time
+f: Frequency
+Acc: Acceleration
+mean: Mean
+std: Standard deviation
+mad: Median absolute deviation 
+max: Max
+min: Minimum
+sma: Signal magnitude area 
+iqr: Interquartile range 
+entropy: Entropy
+arCoeff: Autorregresion coefficients with Burg order equal to 4
+correlation: Correlation
+skewness: Skewness
+kurtosis: Kurtosis 
+bandsEnergy: BandsEnergy
+angle: Angle
+
+For the final tidy data, only variables names which contain Mean, or StandardDeviation are used.
+Each subject and activity were grouped and mean of the rest of the variables are calculated.
